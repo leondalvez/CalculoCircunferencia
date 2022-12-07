@@ -10,6 +10,9 @@ e) Método perimetro(): para calcular el perímetro (Perimetro = 2 ∗ π ∗ ra
  */
 package calculocircunferencia;
 
+import Entidad.Circunferencia;
+import Servicio.CircunferenciaServicio;
+
 /**
  *
  * @author Leonardo Alvez
@@ -20,7 +23,18 @@ public class CalculoCircunferencia {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // Instanciamos un objeto del tipo servicio 
+        CircunferenciaServicio cs = new CircunferenciaServicio();
+
+        /// Instanciamos un objeto circunferencia para alojar el retorno 
+        /// de lo construido en la clase de servicio.
+        Circunferencia c1 = cs.crearCircu();
+        
+        cs.area(c1);
+        cs.perimetro(c1);
+        
+        
+                
     }
-    
+
 }

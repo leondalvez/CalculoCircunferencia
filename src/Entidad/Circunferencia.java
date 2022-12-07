@@ -17,7 +17,25 @@ package Entidad;
  */
 public class Circunferencia {
     
-    private Double radio;
+    private  Double radios;
+
+    public Circunferencia() {
+    }
+    
+
+    public Circunferencia(Double radio) {
+        this.radios = radio;
+    }
+
+    public void setRadios(Double radios) {
+        this.radios = radios;
+    }
+
+    public Double getRadios() {
+        return radios;
+    }
+    
+    
     
     
     
